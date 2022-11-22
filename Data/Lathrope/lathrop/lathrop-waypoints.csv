@@ -1,0 +1,7 @@
+Number,Name,Description,GeometryType,latitude,longitude,Altitude,density,Thickness
+28,"Lathrop, R4, NDG 94.3",,Point,37.81907004,-121.2891194,-0.557,93.4,2.7
+27,"Lathrop, R5, NDG 94.5",,Point,37.81907203,-121.2885476,-0.939,93.8,2.8
+26,"Lathrop, R6, NDG 94",,Point,37.81905966,-121.2879115,-1.676,92.7,2.7
+25,"Lathrop, R3, NDG 95",,Point,37.81903288,-121.2904883,-0.571,94,2.5
+24,"Lathrop, R2, NDG 95",,Point,37.81903881,-121.2911619,-2.239,95,2.4
+23,"Lathrop, R1, NDG 95",,Point,37.81902592,-121.2915524,-1.122,95.2,2.7
