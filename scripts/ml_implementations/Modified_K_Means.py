@@ -15,7 +15,7 @@ def input_args():
     parser.add_argument(
         "-c",
         dest="CSV",
-        help="location of csv file that is to b used to train the model"
+        help="location of POWER power_final_pass_3781881_1212807_114.csv file that is to be clustered or used to train the model"
     )
     parser.add_argument(
         "-sn",
