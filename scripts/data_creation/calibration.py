@@ -55,7 +55,7 @@ def input_args():
         "-c",
         dest="CSV",
         default=None,
-        help="location of csv file that is to b used to create the calibration file"
+        help="location of csv file that is to be used to create the calibration file"
     )
     flags = vars(parser.parse_args())
     return flags

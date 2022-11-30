@@ -12,12 +12,12 @@ from query_fn import query_it, query_betn
 
 def input_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-db",
-        dest="DB",
-        default=None,
-        help="name of db containing the raw and processed data",
-    )
+    # parser.add_argument(
+    #     "-db",
+    #     dest="DB",
+    #     default=None,
+    #     help="name of db containing the raw and processed data",
+    # )
     parser.add_argument(
         "-s",
         dest="SAVE_AT",
@@ -34,13 +34,13 @@ def input_args():
         "-arg",
         dest="ARGS",
         default=None,
-        help="location of csv file that is to b used to create the calibration file"
+        help="location of arguments' yml file that is to b used to create the calibration file"
     )
     parser.add_argument(
         "-sn",
         dest="SAVE_N",
         default=None,
-        help="location of csv file that is to b used to create the calibration file"
+        help="name of the power csv file so to be created"
     )
     flags = vars(parser.parse_args())
     return flags
@@ -71,7 +71,7 @@ def convert_vib_df_to_power_list(vib_data_pd,args,normalize=True):
 if __name__ == "__main__":
     flags = input_args()
 
-    db_name = flags["DB"]
+    # db_name = flags["DB"]
     to_save_location = flags["SAVE_AT"]
     to_save_name=flags["SAVE_N"]
     csv = flags["CSV"]
