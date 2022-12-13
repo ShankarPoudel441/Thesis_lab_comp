@@ -77,7 +77,7 @@ if __name__=="__main__":
         with open(model_l, 'rb') as f:
             model = pickle.load(f)
     else:
-        model=KMeans(n_clusters=6)
+        model=KMeans(n_clusters=5,random_state=42)
         model.fit(np_array_train)
         model=sort_clusters(model)
         with open(save_at+'/'+model_name,'wb') as f:
