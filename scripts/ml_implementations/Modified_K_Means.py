@@ -15,7 +15,7 @@ def input_args():
     parser.add_argument(
         "-c",
         dest="CSV",
-        help="location of csv file that is to b used to train the model"
+        help="location of POWER power_final_pass_3781881_1212807_114.csv file that is to be clustered or used to train the model"
     )
     parser.add_argument(
         "-sn",
@@ -77,7 +77,7 @@ if __name__=="__main__":
         with open(model_l, 'rb') as f:
             model = pickle.load(f)
     else:
-        model=KMeans(n_clusters=6)
+        model=KMeans(n_clusters=5,random_state=42)
         model.fit(np_array_train)
         model=sort_clusters(model)
         with open(save_at+'/'+model_name,'wb') as f:

@@ -49,13 +49,13 @@ def input_args():
         "-s",
         dest="SAVE_AT",
         default=None,
-        help="folder to save the output dataframes at",
+        help="folder to save the output args file at",
     )
     parser.add_argument(
         "-c",
         dest="CSV",
         default=None,
-        help="location of csv file that is to b used to create the calibration file"
+        help="location of csv file that is to be used to create the calibration file"
     )
     flags = vars(parser.parse_args())
     return flags
