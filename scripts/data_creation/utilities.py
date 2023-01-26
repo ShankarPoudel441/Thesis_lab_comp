@@ -35,11 +35,11 @@ class vibration:
 def convert_to_vibration(df):
     """Compute vibration objects from dataframe"""
     vibration_list = []
-    for i in range(255, 128 * (len(df) // 128), 128):
+    for i in range(127, 128 * (len(df) // 128), 128):
         vibration_list.append(
             vibration(
                 timestamp=df.loc[i, "time"],
-                data=df.loc[i - 255 : i, "vibration"].values,
+                data=df.loc[i - 127 : i, "vibration"].values,
             )
         )
     return vibration_list
@@ -240,7 +240,7 @@ class PowerModule:
     """
 
     fundFreq: float = 45.0
-    N: int = 256
+    N: int = 128
     stepSize: int = 128
     fs: float = 1000
     mean: np.array = np.array([0, 0, 0, 0, 0, 0, 0])

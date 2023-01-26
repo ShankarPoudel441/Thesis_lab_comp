@@ -49,7 +49,7 @@ def input_args():
         "-s",
         dest="SAVE_AT",
         default=None,
-        help="folder to save the output dataframes at",
+        help="folder to save the output args file at",
     )
     parser.add_argument(
         "-c",
